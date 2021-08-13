@@ -1,0 +1,557 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+/*TESTES*/
+
+
+
+/** HTML BODY*/
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    width: 100%;
+}
+
+
+
+/* TEXTOS*/
+a {
+    text-decoration: none;    
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 5.5rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+
+}
+
+h5 {
+    font-size: 4rem;
+
+}
+
+/* MENU NAV */
+.menu {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: lightgrey solid 0.01rem;
+}
+
+.menu h1 a {
+    color: rgb(255, 103, 86);
+    font-size: 2.3rem;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2.3rem;
+    font-size: 1.8rem;
+    position: relative;
+    color: black;
+    text-transform: uppercase;
+}
+
+.menu ul li a::after {
+    content:'';
+    position: absolute;
+    bottom: 1rem;
+    left: 90%;
+    width: 0;
+    height: 0.2rem;
+    background: lightsalmon;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover:after {
+    width: 50%;
+    left:25%;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+
+/* CONTEUDO */
+.bg-poop {
+    background: -webkit-linear-gradient(rgb(255, 103, 86) , rgb(255, 123, 108) 50%,  white 100%);
+    /* background-color:rgb(255, 103, 86); */
+    min-height: 450px;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.black-bg {
+    background-color: black;
+    width: 100%;
+}
+
+
+
+/* PRESENTATION */
+.presentation-container {
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 60px;
+}
+
+.presentation-title p {
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.presentation-title h2 {
+    font-size: 3.8rem;
+}
+
+.presentation-title a {
+    color: inherit;
+}
+
+/* BOTÕES PRESENTATION */
+.presentation-button {
+    padding: auto;
+    height: 60px;
+    width: 40%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+.button5 {
+    background-color: white;
+    color: rgb(255, 103, 86);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.button5:hover {background-color: #21DEDE; color:white;}
+
+
+
+/* CONTENT PLAYERS */
+.content-player img {
+    border: rgb(255, 103, 86) solid 2px;
+}
+.content-player h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: rgb(255, 103, 86);
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.content-player {
+    align-items: center;
+    margin: 0 auto;
+}
+
+.content-main-players {
+    width: 100%;
+    margin: auto;
+}
+
+.content-main-players li {
+    list-style: none;
+}  
+
+.content-container-players {
+    width: 80%;
+    margin: 40px auto 0 auto;
+}
+
+.content-gif-player {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+.content-player-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*HISTORY PLAYERS*/
+.sobre {
+    height:150px;
+    background-color: black;
+    margin-top: 71px;
+}
+
+.title {
+    text-align: center;
+    color: rgb(255, 103, 86);
+    width: 100%;
+    padding-top: 42px;
+}
+
+
+.history-container {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+.history-box {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.history-title {
+    width: 40%;
+    align-items: center;
+}
+
+.history-text {
+    list-style: none;
+}
+
+
+.history-text p {
+    color: rgb(255, 103, 86);
+}
+
+.history-icons {
+    display: flex;
+    list-style: none;   
+}
+
+.history-list {
+    flex-direction: column;
+    width: 56%;
+}
+
+.player-descri {
+    margin-bottom: 15px;
+}
+
+.anchor-div {
+    height:68px;
+    width: 100%;
+}
+
+
+/* TOP BUTTON */
+.scrollButton {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 103, 86);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  .scrollButton:hover {
+    background-color: #555;
+  }
+  
+  #fill {
+    height: 0px;
+  }
+
+/* FORMULARIO */
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+.form-contact {
+    height:180px;
+    background-color: black;
+    margin-top: 71px;
+}
+.bg-form {
+    background-color: black;
+    height: 400px;
+}
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 0 auto 100px auto;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px #ffffff;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: rgb(255, 103, 86);
+  color: #e2dedb;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px #ffffff;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: rgb(255, 103, 86);;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 502px;
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #ffffff;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+} 
+
+/*  */
+ .direitos {
+    background-color: black;    
+    width: 100%;
+}
+.a-direitos {
+    display: flex;
+    align-items: center;
+    width: 18%;
+    margin: auto;
+    justify-content: space-between;
+    color: white;
+}
+
+.direitos a {
+    color: inherit;   
+}
+
+.company {
+    color: white;
+    height: 40px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 1.6rem;
+    
+} 
+
+.a-direitos a:hover {
+    color:rgb(255, 103, 86);;
+}
+
+
+
+
+
+/* GRAFICO DE HABILIDADES */
+.container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+}
+  
+.skills {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+}
+
+/* BILLY */
+.billyar {width: 95%; background-color: rgb(255, 103, 86);} /* Green */
+.billysmts {width: 90%; background-color: rgb(255, 103, 86);} /* Blue */
+.billysniper {width: 75%; background-color: rgb(255, 103, 86);} /* Red */
+.billynj {width: 95%; background-color: rgb(255, 103, 86);} /* Dark Grey */
+
+/* KOJI */
+.kojiar {width: 90%; background-color: rgb(255, 103, 86);} /* Green */
+.kojismts {width: 80%; background-color: rgb(255, 103, 86);} /* Blue */
+.kojisniper {width: 99%; background-color: rgb(255, 103, 86);} /* Red */
+.kojinj {width: 93%; background-color: rgb(255, 103, 86);} /* Dark Grey */
+
+/* NOOB KILLER */
+.noobar {width: 95%; background-color: rgb(255, 103, 86);} /* Green */
+.noobsmts {width: 92%; background-color: rgb(255, 103, 86);} /* Blue */
+.noobsniper {width: 40%; background-color: rgb(255, 103, 86);} /* Red */
+.noobnj {width: 91%; background-color: rgb(255, 103, 86);} /* Dark Grey */
+
+/* ATIRADO_099 */
+.atiradorar {width: 82%; background-color: rgb(255, 103, 86);} /* Green */
+.atiradorsmts {width: 87%; background-color: rgb(255, 103, 86);} /* Blue */
+.atiradorsniper {width: 90%; background-color: rgb(255, 103, 86);} /* Red */
+.atiradornj {width: 2%; background-color: rgb(255, 103, 86);} /* Dark Grey */
+
+/* GUIKWK */
+.guiar {width: 50%; background-color: rgb(255, 103, 86);} /* Green */
+.guismts {width: 55%; background-color: rgb(255, 103, 86);} /* Blue */
+.guisniper {width: 13%; background-color: rgb(255, 103, 86);} /* Red */
+.guinj {width: 20%; background-color: rgb(255, 103, 86);} /* Dark Grey */
